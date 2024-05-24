@@ -169,6 +169,50 @@
         .cta-button:hover {
             background-color: #ff3333; /* Vermelho mais claro ao passar o mouse */
         }
+
+        .rating {
+            font-size: 24px;
+            color: gold; /* Cor das estrelas */
+        }
+
+        .rating input {
+            display: none;
+        }
+
+        .rating label {
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .rating label:before {
+            content: '\2605'; /* Código Unicode da estrela vazia */
+        }
+
+        .rating input:checked ~ label:before {
+            content: '\2605'; /* Código Unicode da estrela preenchida */
+        }
+
+        .rating {
+            font-size: 24px;
+            color: gold; /* Cor das estrelas */
+        }
+
+        .rating input {
+            display: none;
+        }
+
+        .rating label {
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .rating label:before {
+            content: '\2605'; /* Código Unicode da estrela vazia */
+        }
+
+        .rating input:checked ~ label:before {
+            content: '\2605'; /* Código Unicode da estrela preenchida */
+        }
     </style>
 </head>
 
@@ -434,7 +478,29 @@
                         <p>"Os doces desta padaria são uma tentação irresistível! Cada pedaço é uma explosão de sabores deliciosos. Já provei vários e sempre fico encantado com a qualidade e variedade oferecidas."</p>
                     </div>
                 </section>
-                
+
+                    <div class="rating">
+                    <input type="radio" id="star9" name="rating" value="9">
+                    <label for="star9">&#9733;</label>
+                    <input type="radio" id="star8" name="rating" value="8">
+                    <label for="star8">&#9733;</label>
+                    <input type="radio" id="star7" name="rating" value="7">
+                    <label for="star7">&#9733;</label>
+                    <input type="radio" id="star6" name="rating" value="6">
+                    <label for="star6">&#9733;</label>
+                    <input type="radio" id="star5" name="rating" value="5">
+                    <label for="star5">&#9733;</label>
+                    <input type="radio" id="star9" name="rating" value="9">
+                    <label for="star9">&#9733;</label>
+                    <input type="radio" id="star8" name="rating" value="8">
+                    <label for="star8">&#9733;</label>
+                    <input type="radio" id="star7" name="rating" value="7">
+                    <label for="star7">&#9733;</label>
+                    <input type="radio" id="star6" name="rating" value="6">
+                    <label for="star6">&#9733;</label>
+                    <input type="radio" id="star5" name="rating" value="5">
+                    <label for="star5">&#9733;</label>
+                </div>
                 
                 <section id="special-offers" class="info">
                     <h2>Ofertas Especiais</h2>
